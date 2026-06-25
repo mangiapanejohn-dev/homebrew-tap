@@ -5,14 +5,15 @@ Homebrew tap for [QuotaLens](https://github.com/mangiapanejohn-dev/QuotaLens) an
 ## Install QuotaLens
 
 ```sh
-brew install --cask mangiapanejohn-dev/tap/quotalens
-```
-
-Or tap first, then install:
-
-```sh
 brew tap mangiapanejohn-dev/tap
 brew install --cask quotalens
+```
+
+Recent Homebrew gates casks from third-party taps. If it refuses with an "untrusted tap"
+message, trust it once:
+
+```sh
+brew trust --cask mangiapanejohn-dev/tap/quotalens
 ```
 
 QuotaLens isn't notarized, so on first launch right-click the app → **Open**, or run
