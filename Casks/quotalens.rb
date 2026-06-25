@@ -7,16 +7,11 @@ cask "quotalens" do
   desc "Menu-bar gauge for Claude and Codex usage quotas"
   homepage "https://github.com/mangiapanejohn-dev/QuotaLens"
 
-  depends_on macos: ">= :ventura"
-
   app "QuotaLens.app"
 
-  # The build is ad-hoc signed (not notarized); first launch still needs
-  # right-click → Open, or: xattr -dr com.apple.quarantine QuotaLens.app
   caveats <<~EOS
-    QuotaLens isn't notarized. On first launch, right-click the app and choose
-    Open, or run:
-      xattr -dr com.apple.quarantine "#{appdir}/QuotaLens.app"
+    QuotaLens isn't notarized. On first launch, right-click the app and choose Open,
+    or run: xattr -dr com.apple.quarantine /Applications/QuotaLens.app
   EOS
 
   zap trash: [
