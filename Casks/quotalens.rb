@@ -1,6 +1,6 @@
 cask "quotalens" do
-  version "1.0.2"
-  sha256 "307bdd6a5d5caa26d84aab27bb27e4508eb02820dd0c83d8404cb89c7edb2c1b"
+  version "2.0.1"
+  sha256 "1e58c23c5ad1e668cd2e0818a4f64f80341cbe2163e05e733b6ca0f5eaf47eb8"
 
   url "https://github.com/mangiapanejohn-dev/QuotaLens/releases/download/v#{version}/QuotaLens.dmg"
   name "QuotaLens"
